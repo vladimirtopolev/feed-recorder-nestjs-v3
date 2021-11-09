@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install": "npm run install:server && npm run install:client",
     "build": "npm run build:server && npm run build:client",
     "start": "cd ./server && node ./dist/main.js",
     "server:dev": "cd ./server && npm run start:dev",
 
-    "build:client": "cd ./client && npm run install && npm run build",
-    "build:server": "cd ./server && npm run install && npm run build"
+    "install:client": "cd ./client && npm i",
+    "install:server": "cd ./server && npm i",
+
+    "build:client": "cd ./client && npm run build",
+    "build:server": "cd ./server && npm run build"
   },
   "engines": {
     "node": "12.9"
