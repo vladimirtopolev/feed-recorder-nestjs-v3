@@ -9,7 +9,7 @@
     "server:dev": "cd ./server && npm run start:dev",
 
     "build:client": "cd ./client && npm run install && npm run build",
-    "build:server": "cd ./server && npmn run intsall && npm run build"
+    "build:server": "cd ./server && npm run install && npm run build"
   },
   "engines": {
     "node": "12.9"
